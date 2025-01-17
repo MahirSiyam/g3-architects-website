@@ -131,18 +131,127 @@
     color: #727272;
     font-size: 1rem;
     font-weight: 400;
+    max-width: 542px;
+  }
+  
+
+  .fact-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+  }
+
+  .fact{
+    border: 1px solid #FF900E;
+    width: 240px;
+    height: 240px;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .fact-number{
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+
+  .fact-name{
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-top: 10px;
+  }
+
+  .divvv{
+    max-width: 540px;
+    margin: 50px auto;
+    text-align: center;
+  }
+
+  .logo{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+  }
+
+  .logo img{
+    filter: grayscale(100%);
+  }
+
+  .features-section-title{
+    border-left: 5px solid #FF900E;
+    padding-left: 21px;
+  }
+
+  .features-card{
+    padding: 30px;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+    margin-bottom: 20px;
+    border-radius: 8px;
+  }
+
+  .mmm{
+    display: flex;
+    gap: 100px;
+  }
+
+  .features-card .features-title{
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  .sp-1{
+    font-size: 4rem;
+    font-weight: bold;
+  }
+
+  .sp-2{
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+
+  .btt{
+    padding:40px;
+    margin-left: -100px;
+    margin-top: -100px;
+  }
+
+  .imm{
+    width: 100%;
   }
 
   /* phone */
   @media screen and (max-width:576px) {
     .navbar,
     .nav-links,
-    .teams{
+    .teams,
+    .mmm{
         flex-direction: column;
     }
 
-    .team-image{
+    .team-image,
+    .fact-container,
+    .logo,
+    .btt
+    {
         grid-template-columns: repeat(1,1fr);
+    }
+
+    .logo{
+        justify-items: center;
+        gap: 50px;
+    }
+
+    .fact-container{
+        justify-items: center;
+        gap: 24px;
+    }
+
+    .btt{
+        justify-items: center;
+        gap: 15px;
     }
 
     .our-feature{
@@ -156,7 +265,19 @@
         flex-direction: column;
     }
 
+    .fact-container{
+        grid-template-columns: repeat(2,1fr);
+        justify-items: center;
+        gap: 20px;
+    }
+
     .our-feature{
         margin: 50px auto;
+    }
+
+    .logo{
+        grid-template-columns: repeat(3,1fr);
+        justify-items: center;
+        gap: 50px;
     }
   }
