@@ -234,7 +234,6 @@
     .team-image,
     .fact-container,
     .logo,
-    .btt
     {
         grid-template-columns: repeat(1,1fr);
     }
@@ -250,8 +249,8 @@
     }
 
     .btt{
-        justify-items: center;
-        gap: 15px;
+        margin-top: 20px;
+        margin-left: 20px;
     }
 
     .our-feature{
